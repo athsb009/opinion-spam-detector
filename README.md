@@ -68,23 +68,26 @@ Each classifier was optimized independently via randomized search:
 
 ## Setup
 
+## Setup
 ```bash
 # Clone the repo
-git clone https://github.com/athsb009/opinion-spam-detection
-cd opinion-spam-detection
+git clone https://github.com/athsb009/Opinion-Spam-Detection-Using-Ensemble-Leaning
+cd Opinion-Spam-Detection-Using-Ensemble-Leaning
 
 # Install dependencies
-pip install -r requirements.txt
+pip install scikit-learn xgboost pandas numpy matplotlib jupyter
 
-# Download dataset
-# https://www.kaggle.com/datasets/akudnaver/amazon-reviews-dataset
-
-# Run preprocessing
-python preprocess.py
-
-# Train and evaluate all models
-python train.py
+# Launch Jupyter
+jupyter notebook
 ```
+
+## Notebooks
+
+Run in this order:
+1. `Data Cleaning.ipynb` — load and clean the raw dataset
+2. `Data Preprocessing.ipynb` — TF-IDF and Count Vectorization
+3. `Model Training and Evaluation.ipynb` — train all classifiers and evaluate results
+
 
 ## Dataset
 
